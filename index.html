@@ -16,360 +16,387 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/icons/favicon.png" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/icons/favicon.png" />
+    <!-- Put your site title here -->
+    <title>Ortwin Van der Stappen</title>
 
-  <!-- Put your site title here -->
-  <title>
-    Ortwin Van der Stappen
-  </title>
+    <meta name="description" content="Add small description of yourslef." />
+    <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+    <meta name="keywords" content="Ortwin Van der Stappen, C++, Lua, C#, Python, SQL, HTML, CSS, Javascript, NodeJS" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Ortwin Van der Stappen, C++, Lua, C#, Python, SQL, HTML, CSS, Javascript, NodeJS" />
-  <link rel="stylesheet" href="index.css" />
-</head>
+  <body>
+    <!-- ***** Header ***** -->
 
-<body>
+    <header class="header" role="banner" id="top">
+      <div class="row">
+        <nav class="nav" role="navigation">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Main Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__text-box row">
+        <div class="header__text">
+          <h1 class="heading-primary">
+            <!-- Replace the following name with your name -->
+            <span>Van der Stappen Ortwin</span>
+          </h1>
+          <!-- Put a small paragraph about yourself -->
+          <p>Experienced C++ Software Engineer based in London.</p>
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
+      </div>
+    </header>
 
-  <!-- ***** Header ***** -->
+    <main role="main">
+      <!-- ***** Skills ***** -->
+      <section class="skills" id="skills">
+        <div class="row">
+          <h2>Main Skills</h2>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="#skills" class="nav__link">Main Skills</a>
+          <h3>C++</h3>
+          <p>
+            My most familiar language, extensively taught during my education in Digital Arts and Entertainment (DAE)
+            and applied during my career as a Game Developer at Frontier Developments.
+            <br /><br />
+            From proficiency in the std library and algorithms, to creating clean and extensible code. Strong knowledge
+            of OOP, component based development, system design and memory management.
+          </p>
+
+          <h3>Game Engines</h3>
+          <p>
+            Knowledge of both Unreal Engine and Unity and able to quickly adapt to existing codebases as I've done with
+            Frontier Development's COBRA engine.
+          </p>
+
+          <h3>Teamwork & Problem solving</h3>
+          <p>
+            Communication is a strong skillset of mine and I don't shy away from taking responsibility for systems and
+            teams.
+            <br />
+            I like a challenge and researching new things. It's what makes coding fun.
+          </p>
+
+          <h3>Source Control</h3>
+          <p>Extensive knowledge of Perforce, SVN and Github.</p>
+
+          <h3>Coding languages</h3>
+          <p>
+            While C++ is my strongest move, I also have a solid knowledge of
+            <li><b>C#</b>; Unity and windows apps</li>
+            <li>
+              <b>Lua & Python</b>; profesional lua knowledge and Python hobby projects like web scraping and
+              automatisation
+            </li>
+            <li>
+              <b>Javascript, NodeJS, SQL</b>; personal hobby projects like recreating spareroom.co.uk with google maps &
+              family real estate website
+            </li>
+          </p>
+        </div>
+      </section>
+
+      <!-- ***** Work ***** -->
+      <section class="work" id="work">
+        <div class="row">
+          <h2>My projects</h2>
+          <div class="work__boxes">
+            <!-- Each div with the work__box class is a project. -->
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Warhammer Age of Sigmar: Realms of Ruin</h3>
+                <p>Large team based game project where I worked from internship to graduate to full programmer.</p>
+                <ul class="work__list">
+                  <li>C++ & Lua</li>
+                  <li>Component based programming</li>
+                  <li>Team skills</li>
+                  <li>Planning and system design</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="https://www.aosrealmsofruin.com/" target="_blank" class="link__text">
+                    Visit Website <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://store.steampowered.com/app/1844380/Warhammer_Age_of_Sigmar_Realms_of_Ruin/"
+                    title="View Source Code"
+                    target="_blank">
+                    <img src="./images/icons/Steam_icon_logo.svg" class="work__code" alt="Steam" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/projects/realmsofruin.jpg" class="work__image" alt="Project 1" />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Marching Cube Terrain Generation</h3>
+                <p>A Unity implementation of the marching cube algorithm using compute shaders.</p>
+                <ul class="work__list">
+                  <li>Compute Shaders</li>
+                  <li>Unity</li>
+                  <li>C#</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/ortwinvanderstappen/unity-marching-cubes"
+                    target="_blank"
+                    class="link__text">
+                    Visit Repository <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/ortwinvanderstappen/unity-marching-cubes"
+                    title="View Source Code"
+                    target="_blank">
+                    <img src="./images/icons/github.svg" class="work__code" alt="GitHub" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/projects/MarchingCubes.png" class="work__image" alt="Project 1" />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Delta Valley</h3>
+                <p>
+                  A Unity tablet game made for hospitalized children with a unique design restriction. This game helped
+                  children undergo stress-free anesthesia. Made with a group of 5.
+                </p>
+                <ul class="work__list">
+                  <li>Unity</li>
+                  <li>C#</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="https://www.youtube.com/watch?v=cgEoFJjGBTo" target="_blank" class="link__text">
+                    Trailer <span>&rarr;</span>
+                  </a>
+                  <a href="https://www.youtube.com/watch?v=cgEoFJjGBTo" title="View Source Code" target="_blank">
+                    <img src="./images/icons/youtube.png" class="work__code" alt="Youtube.com" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/projects/DeltaValley.png" class="work__image" alt="Project 1" />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Cubed</h3>
+                <p>An Unreal Engine game made with a group of students. 3 artists, 2 coders.</p>
+                <ul class="work__list">
+                  <li>Unreal Engine 4</li>
+                  <li>C++</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="https://ortwinvanderstappen.itch.io/cubed" target="_blank" class="link__text">
+                    Visit Itch.io <span>&rarr;</span>
+                  </a>
+                  <a href="https://ortwinvanderstappen.itch.io/cubed" title="View Source Code" target="_blank">
+                    <img src="./images/icons/itch_logo.png" class="work__code" alt="Itch.io" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/projects/Cubed.jpg" class="work__image" alt="Project 1" />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Goal Oriented Action Planner (GOAP)</h3>
+                <p>A GOAP based AI, developed for a zombie survival game in the second year of DAE.</p>
+                <ul class="work__list">
+                  <li>C++</li>
+                </ul>
+
+                <div class="work__links">
+                  <a
+                    href="https://github.com/ortwinvanderstappen/ZombieAI_GoalOrientedActionPlanner"
+                    target="_blank"
+                    class="link__text">
+                    Visit Repository <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://github.com/ortwinvanderstappen/ZombieAI_GoalOrientedActionPlanner"
+                    title="View Source Code"
+                    target="_blank">
+                    <img src="./images/icons/github.svg" class="work__code" alt="GitHub" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/projects/ZombieAI.gif" class="work__image" alt="Project 1" />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>QBert Game Engine</h3>
+                <p>A custom component based game engine made in the second year of DAE.</p>
+                <ul class="work__list">
+                  <li>C++</li>
+                  <li>OpenGL</li>
+                  <li>SDL</li>
+                  <li>Rapidjson</li>
+                  <li>ImGUI</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="https://github.com/ortwinvanderstappen/QBert-game-engine" target="_blank" class="link__text">
+                    Visit Repository <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/ortwinvanderstappen/QBert-game-engine" target="_blank">
+                    <img src="./images/icons/github.svg" class="work__code" title="View Source Code" alt="GitHub" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/projects/QBert.png" class="work__image" alt="Project 2" />
+              </div>
+            </div>
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Graphics engine</h3>
+                <p>
+                  Custom implementations in an existing engine called Overlord engine. The main focus of this course was
+                  writing custom shaders via the DirectX11 pipeline and making a small game with it. Made in second year
+                  of DAE.
+                </p>
+                <ul class="work__list">
+                  <li>C++</li>
+                  <li>NVIDIA PhysX</li>
+                  <li>DirectX11</li>
+                  <li>HLSL</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="https://github.com/ortwinvanderstappen/graphics-engine" class="link__text">
+                    Visit Repository <span>&rarr;</span>
+                  </a>
+                  <a href="https://github.com/ortwinvanderstappen/graphics-engine">
+                    <img src="./images/icons/github.svg" class="work__code" title="View Source Code" alt="GitHub" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/projects/VillageGuardian.PNG" class="work__image" alt="Project 3" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** About ***** -->
+      <section class="about" id="about">
+        <div class="row">
+          <h2>About Me</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <!-- Replace the below paragraph with info about yourself -->
+              <p>
+                Im a passionate Belgian Software Engineer based in London. My biggest motivation is challenge and
+                learning new things. When a program or website doesn't quite do what I want it to, I enjoy hacking away
+                at my own approach.
+              </p>
+              <p>
+                I studied Game Development at Digital Arts and Entertainment in Belgium, which gave me a very strong
+                foundation of C++. Before that I played around with other coding languages like Visual Basic, Javascript
+                and C# and dabbled around in assembly.
+              </p>
+              <!-- Provide a link to your resume -->
+              <a style="display: none" href="#" class="btn">My Resume</a>
+            </div>
+
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img class="about__photo" src="./images/DAE.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ***** Contact ***** -->
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <div class="contact__info">
+          <p>
+            I'm a fast learner, ready to take on challenges and new experiences. Looking for a developer? Feel free to
+            contact me!
+          </p>
+          <!-- Replace the email with yours -->
+          <a id="emailElement" href="#" class="btn">enable javascript</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Footer ***** -->
+
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <!-- Update the links to point to your accounts -->
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a href="https://github.com/ortwinvanderstappen" target="_blank" title="Link to Github Profile">
+              <img src="./images/icons/github.svg" class="footer__social-image" alt="Github" />
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">Work</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/ortwin-van-der-stappen-15a977214/" target="_blank">
+              <img
+                src="./images/icons/linkedin.svg"
+                title="Link to Linkedin Profile"
+                class="footer__social-image"
+                alt="Linkedin" />
+            </a>
           </li>
         </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Van der Stappen Ortwin</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>Experienced C++ Software Engineer based in London.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
 
-  <main role="main">
-
-    <!-- ***** Skills ***** -->
-    <section class="skills" id="skills">
-      <div class="row">
-        <h2>Main Skills</h2>
-
-        <h3>C++</h3>
-        <p>
-          My most familiar language, extensively taught during my education in Digital Arts and Entertainment (DAE) and
-          applied during my career as a Game Developer at Frontier Developments.
-          <br><br>
-          From proficiency in the std library and algorithms, to
-          creating clean and extensible code. Strong knowledge of OOP, component based development, system design and
-          memory management.
-        </p>
-
-        <h3>Game Engines</h3>
-        <p>
-          Knowledge of both Unreal Engine and Unity and able to quickly adapt to existing codebases as I've done with Frontier Development's COBRA engine.
-        </p>
-
-        <h3>Teamwork & Problem solving</h3>
-        <p>
-          Communication is a strong skillset of mine and I don't shy away from taking responsibility for systems and teams.
-          <br>
-          I like a challenge and researching new things. It's what makes coding fun.
-        </p>
-
-        <h3>Source Control</h3>
-        <p>
-          Extensive knowledge of Perforce, SVN and Github.
-        </p>
-
-        <h3>Coding languages</h3>
-        <p>
-          While C++ is my strongest move, I also have a solid knowledge of
-          <li><b>C#</b>; Unity and windows apps</li>
-          <li><b>Lua & Python</b>; profesional lua knowledge and Python hobby projects like web
-            scraping and automatisation</li>
-          <li><b>Javascript, NodeJS, SQL</b>; personal hobby projects like recreating spareroom.co.uk with google maps & family
-            real estate website</li>
-        </p>
-
-      </div>
-    </section>
-
-    <!-- ***** Work ***** -->
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My projects</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Warhammer Age of Sigmar: Realms of Ruin</h3>
-              <p>
-                Large team based game project where I worked from internship to graduate to full programmer.
-              </p>
-              <ul class="work__list">
-                <li>C++ & Lua</li>
-                <li>Component based programming</li>
-                <li>Team skills</li>
-                <li>Planning and system design</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://www.aosrealmsofruin.com/" target="_blank"
-                  class="link__text">
-                  Visit Website <span>&rarr;</span>
-                </a>
-                <a href="https://store.steampowered.com/app/1844380/Warhammer_Age_of_Sigmar_Realms_of_Ruin/" title="View Source Code"
-                  target="_blank">
-                  <img src="./images/icons/Steam_icon_logo.svg" class="work__code" alt="Steam">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/projects/realmsofruin.jpg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Marching Cube Terrain Generation</h3>
-              <p>
-                A Unity implementation of the marching cube algorithm using compute shaders.
-              </p>
-              <ul class="work__list">
-                <li>Compute Shaders</li>
-                <li>Unity</li>
-                <li>C#</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/ortwinvanderstappen/unity-marching-cubes" target="_blank"
-                  class="link__text">
-                  Visit Repository <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/ortwinvanderstappen/unity-marching-cubes" title="View Source Code"
-                  target="_blank">
-                  <img src="./images/icons/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/projects/MarchingCubes.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Cubed</h3>
-              <p>
-                An Unreal Engine game made with a group of students. 3 artists, 2 coders.
-              </p>
-              <ul class="work__list">
-                <li>Unreal Engine 4</li>
-                <li>C++</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://ortwinvanderstappen.itch.io/cubed" target="_blank" class="link__text">
-                  Visit Itch.io <span>&rarr;</span>
-                </a>
-                <a href="https://ortwinvanderstappen.itch.io/cubed" title="View Source Code" target="_blank">
-                  <img src="./images/icons/itch_logo.png" class="work__code" alt="Itch.io">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/projects/Cubed.jpg" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Goal Oriented Action Planner (GOAP)</h3>
-              <p>
-                A GOAP based AI, developed for a zombie survival game in the second year of DAE.
-              </p>
-              <ul class="work__list">
-                <li>C++</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/ortwinvanderstappen/ZombieAI_GoalOrientedActionPlanner" target="_blank"
-                  class="link__text">
-                  Visit Repository <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/ortwinvanderstappen/ZombieAI_GoalOrientedActionPlanner"
-                  title="View Source Code" target="_blank">
-                  <img src="./images/icons/github.svg" class="work__code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/projects/ZombieAI.gif" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>QBert Game Engine</h3>
-              <p>
-                A custom component based game engine made in the second year of DAE.
-              </p>
-              <ul class="work__list">
-                <li>C++</li>
-                <li>OpenGL</li>
-                <li>SDL</li>
-                <li>Rapidjson</li>
-                <li>ImGUI</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/ortwinvanderstappen/QBert-game-engine" target="_blank" class="link__text">
-                  Visit Repository <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/ortwinvanderstappen/QBert-game-engine" target="_blank">
-                  <img src="./images/icons/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/projects/QBert.png" class="work__image" alt="Project 2" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Graphics engine</h3>
-              <p>
-                Custom implementations in an existing engine called Overlord engine. The main focus of this course was
-                writing custom shaders via the DirectX11 pipeline and making a small game with it. Made in second year
-                of DAE.
-              </p>
-              <ul class="work__list">
-                <li>C++</li>
-                <li>NVIDIA PhysX</li>
-                <li>DirectX11</li>
-                <li>HLSL</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/ortwinvanderstappen/graphics-engine" class="link__text">
-                  Visit Repository <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/ortwinvanderstappen/graphics-engine">
-                  <img src="./images/icons/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/projects/VillageGuardian.PNG" class="work__image" alt="Project 3" />
-            </div>
-          </div>
+        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+        <p>&copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.</p>
+        <div class="footer__github-buttons">
+          <iframe
+            src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+            frameborder="0"
+            scrolling="0"
+            width="170"
+            height="20"
+            title="Watch Portfolio Template on GitHub">
+          </iframe>
         </div>
       </div>
-    </section>
+    </footer>
 
-
-    <!-- ***** About ***** -->
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Im a passionate Belgian Software Engineer based in London. My biggest motivation is challenge and learning new things. 
-              When a program or website doesn't quite do what I want it to, I enjoy hacking away at my own approach.
-            </p>
-            <p>
-              I studied Game Development at Digital Arts and Entertainment in Belgium, which gave me a very strong foundation of C++. 
-              Before that I played around with other coding languages like Visual Basic, Javascript and C# and dabbled around in assembly.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a style="display: none;" href="#" class="btn">My Resume</a>
-          </div>
-
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/DAE.jpg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ***** Contact ***** -->
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-        <p>
-          I'm a fast learner, ready to take on challenges and new experiences. Looking for a developer? Feel free to contact me!
-        </p>
-        <!-- Replace the email with yours -->
-        <a id="emailElement" href="#" class="btn">enable javascript</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://github.com/ortwinvanderstappen" target="_blank" title="Link to Github Profile">
-            <img src="./images/icons/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/ortwin-van-der-stappen-15a977214/" target="_blank">
-            <img src="./images/icons/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
-              alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/icons/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
-  </a>
-  <script src="./index.js"></script>
-</body>
-
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img src="./images/icons/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+    </a>
+    <script src="./index.js"></script>
+  </body>
 </html>
