@@ -1,19 +1,3 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,7 +8,6 @@
     <!-- Put your site title here -->
     <title>Ortwin Van der Stappen</title>
 
-    <meta name="description" content="Add small description of yourslef." />
     <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
     <meta name="keywords" content="Ortwin Van der Stappen, C++, Lua, C#, Python, SQL, HTML, CSS, Javascript, NodeJS" />
     <link rel="stylesheet" href="index.css" />
@@ -38,10 +21,13 @@
         <nav class="nav" role="navigation">
           <ul class="nav__items">
             <li class="nav__item">
-              <a href="#skills" class="nav__link">Main Skills</a>
+              <a href="#professional-experience" class="nav__link">Work</a>
             </li>
             <li class="nav__item">
-              <a href="#work" class="nav__link">Work</a>
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
@@ -66,68 +52,50 @@
     </header>
 
     <main role="main">
-      <!-- ***** Skills ***** -->
-      <section class="skills" id="skills">
+      <!-- ***** Pro exp ***** -->
+      <section class="professional-experience" id="professional-experience">
         <div class="row">
-          <h2>Main Skills</h2>
+          <h2>Professional experience</h2>
 
-          <h3>C++</h3>
-          <p>
-            My most familiar language, extensively taught during my education in Digital Arts and Entertainment (DAE)
-            and applied during my career as a Game Developer at Frontier Developments.
-            <br /><br />
-            From proficiency in the std library and algorithms, to creating clean and extensible code. Strong knowledge
-            of OOP, component based development, system design and memory management.
-          </p>
-
-          <h3>Game Engines</h3>
-          <p>
-            Knowledge of both Unreal Engine and Unity and able to quickly adapt to existing codebases as I've done with
-            Frontier Development's COBRA engine.
-          </p>
-
-          <h3>Teamwork & Problem solving</h3>
-          <p>
-            Communication is a strong skillset of mine and I don't shy away from taking responsibility for systems and
-            teams.
-            <br />
-            I like a challenge and researching new things. It's what makes coding fun.
-          </p>
-
-          <h3>Source Control</h3>
-          <p>Extensive knowledge of Perforce, SVN and Github.</p>
-
-          <h3>Coding languages</h3>
-          <p>
-            While C++ is my strongest move, I also have a solid knowledge of
-            <li><b>C#</b>; Unity and windows apps</li>
-            <li>
-              <b>Lua & Python</b>; profesional lua knowledge and Python hobby projects like web scraping and
-              automatisation
-            </li>
-            <li>
-              <b>Javascript, NodeJS, SQL</b>; personal hobby projects like recreating spareroom.co.uk with google maps &
-              family real estate website
-            </li>
-          </p>
-        </div>
-      </section>
-
-      <!-- ***** Work ***** -->
-      <section class="work" id="work">
-        <div class="row">
-          <h2>My projects</h2>
           <div class="work__boxes">
+            <div class="work__box">
+              <div class="work__text">
+                <h3>F1 Manager 2024</h3>
+                <h4>January 2024 - current</h4>
+                <p>Manage your own F1 team and lead them to glory.</p>
+                <ul class="work__list">
+                  <li>UE5, C++, SQL</li>
+                  <li>API development</li>
+                  <li>Feature ownership & planning</li>
+                </ul>
+
+                <div class="work__links">
+                  <a href="https://www.f1manager.com/" target="_blank" class="link__text">
+                    Visit Website <span>&rarr;</span>
+                  </a>
+                  <a
+                    href="https://store.steampowered.com/app/2591280/F1_Manager_2024/"
+                    title="Steam Link"
+                    target="_blank">
+                    <img src="./images/icons/Steam_icon_logo.svg" class="work__code" alt="Steam" />
+                  </a>
+                </div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/projects/f1.jpg" class="work__image" alt="F1 manager 2024" />
+              </div>
+            </div>
+
             <!-- Each div with the work__box class is a project. -->
             <div class="work__box">
               <div class="work__text">
                 <h3>Warhammer Age of Sigmar: Realms of Ruin</h3>
-                <p>Large team based game project where I worked from internship to graduate to full programmer.</p>
+                <h4>February 2022 - January 2024</h4>
+                <p>A deterministic multiplayer real time strategy game based in the warhammer universe.</p>
                 <ul class="work__list">
                   <li>C++ & Lua</li>
                   <li>Component based programming</li>
-                  <li>Team skills</li>
-                  <li>Planning and system design</li>
+                  <li>Feature ownership & planning</li>
                 </ul>
 
                 <div class="work__links">
@@ -144,6 +112,97 @@
               </div>
               <div class="work__image-box">
                 <img src="./images/projects/realmsofruin.jpg" class="work__image" alt="Project 1" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** Skills ***** -->
+      <section class="skills" id="skills">
+        <div class="row">
+          <h2>Skills</h2>
+
+          <div class="skill-list">
+            <div class="skill-panel">
+              <h3>Coding</h3>
+              <ul class="work__list">
+                <li>C++, lua, C#, scripting languages</li>
+                <li>OOP & component based programming</li>
+                <li>Algorithms and data structures</li>
+                <li>Memory management & threading</li>
+                <li>Low latency</li>
+                <li>SVN, Github, Perforce</li>
+              </ul>
+            </div>
+
+            <div class="skill-panel">
+              <h3>Game engines</h3>
+              <ul class="work__list">
+                <li>UE5</li>
+                <li>Unity</li>
+                <li>Custom engines (Cobra)</li>
+              </ul>
+            </div>
+
+            <div class="skill-panel">
+              <h3>Ownership and communication</h3>
+              <ul class="work__list">
+                <li>Feature management, planning & implementation</li>
+                <li>Stakeholder communcation</li>
+                <li>Prioritising and ensuring project goals</li>
+                <li>Well written documentation</li>
+                <li>Strong communication</li>
+              </ul>
+            </div>
+
+            <div class="skill-panel">
+              <h3>Reviews & mentorship</h3>
+              <ul class="work__list">
+                <li>High quality code reviews</li>
+                <li>Open to feedback and striving for improvement</li>
+                <li>Providing valuable feedback and learning opportunities to others</li>
+              </ul>
+            </div>
+
+            <div class="skill-panel">
+              <h3>Teamwork & Problem solving</h3>
+              <ul class="work__list">
+                <li>Multi department teamwork</li>
+                <li>Comfortable with technical problems</li>
+                <li>Responsible & autonomous</li>
+                <li>Enjoy a challenge</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ***** Projects ***** -->
+      <section class="projects" id="projects">
+        <div class="row">
+          <h2>My projects</h2>
+          <div class="work__boxes">
+            <!-- Each div with the work__box class is a project. -->
+
+            <div class="work__box">
+              <div class="work__text">
+                <h3>Custom spareroom.co.uk</h3>
+                <p>
+                  A custom implementation of the spareroom maps feature. Made for fine-tuned search control, street
+                  view, custom bookmarking and tube line visualisation.
+                </p>
+                <ul class="work__list">
+                  <li>Node.js</li>
+                  <li>Web routing & API's</li>
+                  <li>Google maps</li>
+                  <li>MongoDB</li>
+                </ul>
+
+                <div class="work__links">Github private</div>
+              </div>
+              <div class="work__image-box">
+                <img src="./images/projects/spareroom.gif" class="work__image" alt="Project 1" />
               </div>
             </div>
 
@@ -232,6 +291,8 @@
                 <p>A GOAP based AI, developed for a zombie survival game in the second year of DAE.</p>
                 <ul class="work__list">
                   <li>C++</li>
+                  <li>GOAP AI</li>
+                  <li>A* pathfinding</li>
                 </ul>
 
                 <div class="work__links">
@@ -320,14 +381,16 @@
             <div class="about__text">
               <!-- Replace the below paragraph with info about yourself -->
               <p>
-                Im a passionate Belgian Software Engineer based in London. My biggest motivation is challenge and
-                learning new things. When a program or website doesn't quite do what I want it to, I enjoy hacking away
-                at my own approach.
+                I'm a passionate Belgian Software Engineer based in London, motivated by new challenges and constantly
+                seeking opportunities to learn.
               </p>
               <p>
                 I studied Game Development at Digital Arts and Entertainment in Belgium, which gave me a very strong
-                foundation of C++. Before that I played around with other coding languages like Visual Basic, Javascript
-                and C# and dabbled around in assembly.
+                foundation in C++ and game development.
+              </p>
+              <p>
+                I strive for improvement, and much like my adventurous spirit on life, I aim to pioneer innovative
+                technologies.
               </p>
               <!-- Provide a link to your resume -->
               <a style="display: none" href="#" class="btn">My Resume</a>
@@ -335,7 +398,7 @@
 
             <div class="about__photo-container">
               <!-- Add a nice photo of yourself -->
-              <img class="about__photo" src="./images/DAE.jpg" alt="" />
+              <img class="about__photo" src="./images/about.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -346,21 +409,7 @@
     <section class="contact" id="contact">
       <div class="row">
         <h2>Get in Touch</h2>
-        <div class="contact__info">
-          <p>
-            I'm a fast learner, ready to take on challenges and new experiences. Looking for a developer? Feel free to
-            contact me!
-          </p>
-          <!-- Replace the email with yours -->
-          <a id="emailElement" href="#" class="btn">enable javascript</a>
-        </div>
-      </div>
-    </section>
 
-    <!-- ***** Footer ***** -->
-
-    <footer role="contentinfo" class="footer">
-      <div class="row">
         <!-- Update the links to point to your accounts -->
         <ul class="footer__social-links">
           <li class="footer__social-link-item">
@@ -379,19 +428,21 @@
           </li>
         </ul>
 
-        <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-        <p>&copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.</p>
-        <div class="footer__github-buttons">
-          <iframe
-            src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-            frameborder="0"
-            scrolling="0"
-            width="170"
-            height="20"
-            title="Watch Portfolio Template on GitHub">
-          </iframe>
+        <div class="contact__info">
+          <p>
+            I'm a fast learner, ready to take on challenges and new experiences. Looking for a developer? Feel free to
+            contact me!
+          </p>
+          <!-- Replace the email with yours -->
+          <a id="emailElement" href="#" class="btn">enable javascript</a>
         </div>
       </div>
+    </section>
+
+    <!-- ***** Footer ***** -->
+
+    <footer role="contentinfo" class="footer">
+      <div class="row"></div>
     </footer>
 
     <a href="#top" class="back-to-top" title="Back to Top">
